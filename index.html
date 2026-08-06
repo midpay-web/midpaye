@@ -11,12 +11,12 @@
             theme: {
                 extend: {
                     colors: {
-                        navyBg: '#0A0F1D',
-                        cardNavy: '#131B2E',
-                        borderNavy: '#1E293B',
-                        electricViolet: '#7C3AED',
-                        violetHover: '#6D28D9',
-                        neonCyan: '#06B6D4',
+                        navyBg: '#0F172A',
+                        cardNavy: '#1E293B',
+                        borderNavy: '#334155',
+                        electricViolet: '#3B82F6',
+                        violetHover: '#2563EB',
+                        neonCyan: '#10B981',
                         textMuted: '#94A3B8',
                     }
                 }
@@ -29,18 +29,18 @@
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
         body {
             font-family: 'Plus Jakarta+Sans', sans-serif;
-            background-color: #0A0F1D;
+            background-color: #0F172A;
             color: #F8FAFC;
         }
         .gradient-text {
-            background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%);
+            background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .glass-card {
-            background: rgba(19, 27, 46, 0.7);
+            background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(51, 65, 85, 0.8);
         }
         /* Modal transitions */
         .modal {
@@ -51,34 +51,35 @@
             width: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #0A0F1D;
+            background: #0F172A;
         }
         ::-webkit-scrollbar-thumb {
-            background: #1E293B;
+            background: #334155;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #7C3AED;
+            background: #3B82F6;
         }
     </style>
 </head>
-<body class="antialiased selection:bg-[#7C3AED] selection:text-white">
+<body class="antialiased selection:bg-[#3B82F6] selection:text-white">
 
     <!-- Header / Navigation -->
-    <header class="sticky top-0 z-40 bg-[#0A0F1D]/80 backdrop-blur-md border-b border-[#1E293B]">
+    <header class="sticky top-0 z-40 bg-[#0F172A]/80 backdrop-blur-md border-b border-[#334155]">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-2">
-                <span class="text-2xl font-extrabold tracking-tight text-white">Mid<span class="text-[#7C3AED]">paye</span></span>
+                <span class="text-2xl font-extrabold tracking-tight text-white">Mid<span class="text-[#3B82F6]">paye</span></span>
             </div>
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-[#94A3B8]">
                 <a href="#services" class="hover:text-white transition-colors">Services</a>
                 <a href="#samples" class="hover:text-white transition-colors">Sample Designs</a>
                 <a href="#work" class="hover:text-white transition-colors">Work</a>
                 <a href="#process" class="hover:text-white transition-colors">Process</a>
+                <a href="#track" class="hover:text-white transition-colors text-[#10B981] font-semibold"><i class="fa-solid fa-magnifying-glass mr-1"></i> Track Project</a>
                 <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
             </nav>
             <div>
-                <button onclick="openModal()" class="bg-[#7C3AED] hover:bg-[#6D28D9] text-white px-5 py-2.5 rounded-xl font-medium text-sm transition-all shadow-lg shadow-purple-900/30 transform hover:-translate-y-0.5">
+                <button onclick="openModal()" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white px-5 py-2.5 rounded-xl font-medium text-sm transition-all shadow-lg shadow-blue-900/30 transform hover:-translate-y-0.5">
                     Start at ₹999/-
                 </button>
             </div>
@@ -87,13 +88,13 @@
 
     <!-- Hero Section -->
     <section class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#7C3AED]/15 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#3B82F6]/15 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
                 <!-- Left Content -->
                 <div class="lg:col-span-7 space-y-8">
-                    <div class="inline-flex items-center space-x-2 bg-[#131B2E] px-3.5 py-1.5 rounded-full border border-[#1E293B] shadow-inner">
-                        <span class="w-2 h-2 rounded-full bg-[#06B6D4] animate-pulse"></span>
+                    <div class="inline-flex items-center space-x-2 bg-[#1E293B] px-3.5 py-1.5 rounded-full border border-[#334155] shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-[#10B981] animate-pulse"></span>
                         <span class="text-xs font-semibold uppercase tracking-wider text-[#94A3B8]">Static Informative Websites • Just ₹999</span>
                     </div>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
@@ -103,33 +104,33 @@
                         Strategy, UI/UX, and high-performance website design built around your brand and customers. Lightning fast delivery at unbeatable value.
                     </p>
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                        <button onclick="openModal()" class="bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-center font-semibold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 transform hover:-translate-y-0.5">
+                        <button onclick="openModal()" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white text-center font-semibold px-8 py-4 rounded-xl transition-all shadow-lg shadow-blue-900/40 transform hover:-translate-y-0.5">
                             Start Your Project (₹999)
                         </button>
-                        <a href="#samples" class="bg-[#131B2E] hover:bg-[#1E293B] border border-[#1E293B] text-white text-center font-semibold px-8 py-4 rounded-xl transition-all shadow-sm">
+                        <a href="#samples" class="bg-[#1E293B] hover:bg-[#334155] border border-[#334155] text-white text-center font-semibold px-8 py-4 rounded-xl transition-all shadow-sm">
                             View Sample Designs
                         </a>
                     </div>
                     <div class="flex items-center space-x-6 pt-4 text-sm text-[#94A3B8]">
-                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#06B6D4]"></i><span>100% Responsive</span></div>
-                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#06B6D4]"></i><span>SEO Friendly</span></div>
-                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#06B6D4]"></i><span>Quick Turnaround</span></div>
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#10B981]"></i><span>100% Responsive</span></div>
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#10B981]"></i><span>SEO Friendly</span></div>
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#10B981]"></i><span>Quick Turnaround</span></div>
                     </div>
                 </div>
                 <!-- Right Image Showcase -->
                 <div class="lg:col-span-5">
-                    <div class="glass-card rounded-2xl shadow-2xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300 border border-[#1E293B]">
-                        <div class="bg-[#0A0F1D] px-4 py-3 border-b border-[#1E293B] flex items-center space-x-2">
+                    <div class="glass-card rounded-2xl shadow-2xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300 border border-[#334155]">
+                        <div class="bg-[#0F172A] px-4 py-3 border-b border-[#334155] flex items-center space-x-2">
                             <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
                             <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                             <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-                            <div class="ml-4 bg-[#131B2E] px-4 py-1 rounded-md border border-[#1E293B] text-xs text-[#94A3B8] flex-1 text-center font-mono">https://midpaye.design/preview</div>
+                            <div class="ml-4 bg-[#1E293B] px-4 py-1 rounded-md border border-[#334155] text-xs text-[#94A3B8] flex-1 text-center font-mono">https://midpaye.design/preview</div>
                         </div>
                         <div class="relative overflow-hidden group">
                             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Web Design Dashboard" class="w-full h-72 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#0A0F1D] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-80"></div>
                             <div class="absolute bottom-4 left-6 right-6">
-                                <span class="bg-[#7C3AED] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">High Conversion</span>
+                                <span class="bg-[#3B82F6] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">High Conversion</span>
                                 <h4 class="text-xl font-bold text-white mt-2">Modern Agency Layouts</h4>
                             </div>
                         </div>
@@ -140,7 +141,7 @@
     </section>
 
     <!-- Trusted By Section -->
-    <section class="py-12 border-y border-[#1E293B] bg-[#131B2E]/50">
+    <section class="py-12 border-y border-[#334155] bg-[#1E293B]/50">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <p class="text-xs font-bold tracking-widest uppercase text-[#94A3B8] mb-8">Trusted by fast-growing brands & entrepreneurs worldwide</p>
             <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all">
@@ -154,230 +155,338 @@
     </section>
 
     <!-- Live Website Samples Section -->
-    <section id="samples" class="py-24 bg-[#0A0F1D]">
+    <section id="samples" class="py-24 bg-[#0F172A]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
-                <span class="bg-[#06B6D4]/20 text-[#06B6D4] text-xs font-bold px-3 py-1 rounded-full border border-[#06B6D4]/30 uppercase tracking-wider">Live Demos</span>
+                <span class="bg-[#10B981]/20 text-[#10B981] text-xs font-bold px-3 py-1 rounded-full border border-[#10B981]/30 uppercase tracking-wider">Live Demos</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Explore Sample Website Designs</h2>
                 <p class="text-[#94A3B8] text-lg">Check out real live examples of our high-quality industry website templates built for just ₹999.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Sample 1: School -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://images.squarespace-cdn.com/content/v1/5deef2ba6290e80dd6fec067/1576083086065-1IY82EQOXUXZPKI2B1UX/Grade-4-Math-Edited-1024x521.jpg" alt="School Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">School Website Template</h3>
-
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Fully responsive layout tailored for educational institutions, featuring admissions info, faculty profiles, and event galleries.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/school/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/school/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#3B82F6] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#3B82F6]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/school/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 2: Hospital -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/059/240/979/small_2x/ambulance-waiting-outside-a-modern-hospital-building-on-a-sunny-day-photo.jpg" alt="Hospital Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">Hospital Website Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Clean, professional healthcare layout designed for clinics and hospitals to showcase doctors, departments, and emergency contacts.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/hospital/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/hospital/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#10B981] hover:text-[#0F172A] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#10B981]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/hospital/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 3: News -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://mir-s3-cdn-cf.behance.net/projects/404/eb19a4204062391.Y3JvcCwxMjg4LDEwMDgsNTQsMA.png" alt="News Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">News Portal Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Dynamic content-rich layout crafted for media houses, local newspapers, and blogging platforms with organized trending headlines.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/News/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/News/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#3B82F6] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#3B82F6]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/News/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 4: Business -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://i1.wp.com/psd.graphics/wp-content/uploads/2016/02/Professional-Business-Website-Template-Free-PSD-Mockup1.jpg?fit=912%2C607&ssl=1" alt="Business Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">Business Website Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Corporate and enterprise-focused layout built to showcase professional services, company values, and client testimonials.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/Business/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/Business/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#10B981] hover:text-[#0F172A] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#10B981]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/Business/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 5: Events -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://i.pinimg.com/736x/79/9d/32/799d321454e0d8a488b347b272d43f82.jpg" alt="Events Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">Events Website Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Engaging event scheduling layout featuring countdown timers, speaker lineups, ticket booking details, and schedules.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/Events/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/Events/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#3B82F6] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#3B82F6]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/Events/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 6: Landing Pages -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Landing Page Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">Landing Pages Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">High-converting single-page layout optimized for product launches, service promotions, and lead generation.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/Landing-Pages/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/Landing-Pages/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#10B981] hover:text-[#0F172A] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#10B981]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/Landing-Pages/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 7: Nonprofit -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://tse3.mm.bing.net/th/id/OIP.8BEAn-HlLPtj5PCHLi1CVwHaFj?r=0&w=600&h=450&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nonprofit Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">Nonprofit Website Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Compassionate, mission-driven layout designed for NGOs and charities to highlight causes, campaigns, and donation calls.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/Nonprofit-/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/Nonprofit-/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#3B82F6] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#3B82F6]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/Nonprofit-/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 8: Portfolio -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Portfolio Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">Portfolio Website Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Sleek personal branding layout created for freelancers, creatives, and professionals to showcase their work and skills.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/Portfolio/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/Portfolio/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#10B981] hover:text-[#0F172A] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#10B981]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/Portfolio/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 9: Real Estate -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://tse1.mm.bing.net/th/id/OIP.3HRw6b0H6rw2T30AbL8FlgHaE8?r=0&w=1050&h=700&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Real Estate Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">Real Estate Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Property-focused layout built for real estate agencies and agents to display listings, amenities, and agent profiles.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/Real-Estate-/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/Real-Estate-/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#3B82F6] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#3B82F6]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/Real-Estate-/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 10: Restaurant -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">Restaurant Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Appetizing culinary layout tailored for cafes, eateries, and restaurants to feature menus, specials, and table booking info.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/Restaurant/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/Restaurant/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#10B981] hover:text-[#0F172A] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#10B981]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/Restaurant/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
                 <!-- Sample 11: Travel & Tourism -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#3B82F6] transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-1">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://travellearninghub.com/wp-content/uploads/Why-Air-Ticketing-and-GDS-Courses-in-Delhi-Are-Perfect-for-12th-Class-Graduates.jpeg" alt="Travel Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-60"></div>
                         </div>
                         <div class="p-6 space-y-3">
                             <h3 class="text-xl font-bold text-white">Travel & Tourism Template</h3>
                             <p class="text-[#94A3B8] text-sm leading-relaxed">Inspiring destination-focused layout crafted for travel agencies and tour operators to showcase holiday packages and guides.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://midpay-web.github.io/Travel-Tourism/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                    <div class="p-6 pt-0 space-y-3">
+                        <a href="https://midpay-web.github.io/Travel-Tourism/" target="_blank" class="w-full bg-[#1E293B] hover:bg-[#3B82F6] text-white border border-[#334155] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#3B82F6]">
                             <span>Visit Live Demo</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
+                        <button onclick="copySampleLink('https://midpay-web.github.io/Travel-Tourism/', this)" class="w-full bg-[#0F172A] hover:bg-[#334155] text-[#94A3B8] hover:text-white border border-[#334155] font-medium py-2.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-xs">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Demo Link</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- LIVE PROJECT TRACKING SECTION -->
+    <section id="track" class="py-24 bg-[#1E293B]/30 border-y border-[#334155]">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-12 space-y-3">
+                <span class="bg-[#3B82F6]/20 text-[#3B82F6] text-xs font-bold px-3 py-1 rounded-full border border-[#3B82F6]/30 uppercase tracking-wider">Client Portal</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Track Your Website Status</h2>
+                <p class="text-[#94A3B8] text-sm">Enter your registered Phone Number or Brand Name below to check real-time progress updates from our design team and request changes.</p>
+            </div>
+            
+            <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-xl border border-[#334155]">
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <input type="text" id="trackQuery" placeholder="Enter your Brand Name or Phone Number..." class="flex-1 px-4 py-3 rounded-xl border border-[#334155] focus:outline-none focus:border-[#3B82F6] text-sm bg-[#0F172A] text-white">
+                    <button onclick="trackProject()" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white font-semibold px-6 py-3 rounded-xl text-sm transition-all shadow-md flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Check Status</span>
+                    </button>
+                </div>
+
+                <!-- Tracking Results Box -->
+                <div id="trackResultContainer" class="hidden mt-6 pt-6 border-t border-[#334155] space-y-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span id="resBrandName" class="text-xs font-bold text-[#10B981] uppercase tracking-wider">--</span>
+                            <h4 id="resWebsiteType" class="text-lg font-bold text-white">--</h4>
+                        </div>
+                        <span id="resStatusBadge" class="px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30">--</span>
+                    </div>
+
+                    <div class="bg-[#0F172A] p-4 rounded-xl border border-[#334155] space-y-2">
+                        <p class="text-xs font-bold uppercase tracking-wider text-[#94A3B8]">Latest Team Update:</p>
+                        <p id="resNotes" class="text-sm text-white italic">--</p>
+                    </div>
+
+                    <!-- Live Website Link & Copy Button Box -->
+                    <div id="liveLinkBox" class="hidden space-y-3 pt-2">
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a id="resLiveLink" href="#" target="_blank" class="flex-1 bg-[#10B981] hover:bg-[#0d9668] text-[#0F172A] font-bold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-md">
+                                <span>🚀 View Your Live Website</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                            </a>
+                            <button onclick="copyLiveUrl()" class="bg-[#1E293B] hover:bg-[#334155] text-white border border-[#334155] font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm">
+                                <i class="fa-solid fa-copy"></i>
+                                <span id="copyBtnText">Copy Link</span>
+                            </button>
+                        </div>
+
+                        <!-- Change Request Form linked directly to Google Sheet -->
+                        <div class="bg-[#0F172A] p-4 rounded-xl border border-[#334155] space-y-3 mt-4">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8]">Request Design Changes / Revisions</label>
+                            <textarea id="changeCommentsInput" rows="3" placeholder="Describe any updates, color tweaks, or content changes you need..." class="w-full px-4 py-3 rounded-xl border border-[#334155] focus:outline-none focus:border-[#3B82F6] text-sm bg-[#1E293B] text-white"></textarea>
+                            <button onclick="submitChangeRequest()" id="submitCommentBtn" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white font-semibold py-2.5 px-5 rounded-xl text-xs transition-all flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Submit Revision Request to Team</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="trackErrorContainer" class="hidden mt-6 pt-6 border-t border-[#334155] text-center">
+                    <p class="text-sm text-red-400">No project found matching your query. Please make sure you entered the exact name or number used during registration, or contact support on WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
-    <section id="services" class="py-24 bg-[#131B2E]/30">
+    <section id="services" class="py-24 bg-[#0F172A]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Crafted for Performance</h2>
@@ -386,7 +495,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Card 1 -->
                 <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-1.5 group">
-                    <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                    <div class="w-14 h-14 rounded-xl bg-[#3B82F6]/20 text-[#3B82F6] flex items-center justify-center text-xl mb-6 group-hover:bg-[#3B82F6] group-hover:text-white transition-colors">
                         <i class="fa-solid fa-laptop-code"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Website Design</h3>
@@ -394,7 +503,7 @@
                 </div>
                 <!-- Card 2 -->
                 <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-1.5 group">
-                    <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                    <div class="w-14 h-14 rounded-xl bg-[#3B82F6]/20 text-[#3B82F6] flex items-center justify-center text-xl mb-6 group-hover:bg-[#3B82F6] group-hover:text-white transition-colors">
                         <i class="fa-solid fa-pen-nib"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">UI/UX Design</h3>
@@ -402,7 +511,7 @@
                 </div>
                 <!-- Card 3 -->
                 <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-1.5 group">
-                    <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                    <div class="w-14 h-14 rounded-xl bg-[#3B82F6]/20 text-[#3B82F6] flex items-center justify-center text-xl mb-6 group-hover:bg-[#3B82F6] group-hover:text-white transition-colors">
                         <i class="fa-solid fa-mobile-screen-button"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Responsive Web Design</h3>
@@ -410,7 +519,7 @@
                 </div>
                 <!-- Card 4 -->
                 <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-1.5 group">
-                    <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                    <div class="w-14 h-14 rounded-xl bg-[#3B82F6]/20 text-[#3B82F6] flex items-center justify-center text-xl mb-6 group-hover:bg-[#3B82F6] group-hover:text-white transition-colors">
                         <i class="fa-solid fa-rotate"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Website Redesign</h3>
@@ -421,42 +530,42 @@
     </section>
 
     <!-- Featured Work Section -->
-    <section id="work" class="py-24 bg-[#0A0F1D]">
+    <section id="work" class="py-24 bg-[#1E293B]/30">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
                 <div>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Featured Work</h2>
                     <p class="text-[#94A3B8] text-lg mt-2">A small sample of high-impact websites we've built.</p>
                 </div>
-                <button onclick="openModal()" class="mt-4 md:mt-0 text-[#06B6D4] font-bold inline-flex items-center space-x-2 hover:text-white transition-colors">
+                <button onclick="openModal()" class="mt-4 md:mt-0 text-[#10B981] font-bold inline-flex items-center space-x-2 hover:text-white transition-colors">
                     <span>Explore All Projects</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
-                <div class="group relative rounded-2xl overflow-hidden border border-[#1E293B] bg-[#131B2E] aspect-[16/10] flex items-center justify-center p-8">
+                <div class="group relative rounded-2xl overflow-hidden border border-[#334155] bg-[#1E293B] aspect-[16/10] flex items-center justify-center p-8">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Nexus Financial Portal" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-[#0A0F1D]/90 to-[#7C3AED]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <button onclick="openModal()" class="bg-white text-[#0A0F1D] font-semibold px-6 py-3 rounded-xl shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#0F172A]/90 to-[#3B82F6]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <button onclick="openModal()" class="bg-white text-[#0F172A] font-semibold px-6 py-3 rounded-xl shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                             Get Similar Site for ₹999
                         </button>
                     </div>
                     <div class="relative z-10 text-center space-y-2">
-                        <span class="text-xs font-bold tracking-widest text-[#06B6D4] uppercase">SaaS & Fintech</span>
+                        <span class="text-xs font-bold tracking-widest text-[#10B981] uppercase">SaaS & Fintech</span>
                         <h4 class="text-2xl font-bold text-white">Nexus Financial Portal</h4>
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="group relative rounded-2xl overflow-hidden border border-[#1E293B] bg-[#131B2E] aspect-[16/10] flex items-center justify-center p-8">
+                <div class="group relative rounded-2xl overflow-hidden border border-[#334155] bg-[#1E293B] aspect-[16/10] flex items-center justify-center p-8">
                     <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Aura Minimalist Store" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-[#0A0F1D]/90 to-[#7C3AED]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <button onclick="openModal()" class="bg-white text-[#0A0F1D] font-semibold px-6 py-3 rounded-xl shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#0F172A]/90 to-[#3B82F6]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <button onclick="openModal()" class="bg-white text-[#0F172A] font-semibold px-6 py-3 rounded-xl shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                             Get Similar Site for ₹999
                         </button>
                     </div>
                     <div class="relative z-10 text-center space-y-2">
-                        <span class="text-xs font-bold tracking-widest text-[#06B6D4] uppercase">E-Commerce & Retail</span>
+                        <span class="text-xs font-bold tracking-widest text-[#10B981] uppercase">E-Commerce & Retail</span>
                         <h4 class="text-2xl font-bold text-white">Aura Minimalist Store</h4>
                     </div>
                 </div>
@@ -465,7 +574,7 @@
     </section>
 
     <!-- Process Section -->
-    <section id="process" class="py-24 bg-[#131B2E]/30">
+    <section id="process" class="py-24 bg-[#0F172A]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Simple 3-Step Execution</h2>
@@ -473,17 +582,17 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="glass-card p-8 rounded-2xl relative">
-                    <span class="text-4xl font-black text-[#7C3AED]/20 absolute top-6 right-6">01</span>
+                    <span class="text-4xl font-black text-[#3B82F6]/20 absolute top-6 right-6">01</span>
                     <h3 class="text-xl font-bold text-white mb-3 mt-4">Share Details & Pay</h3>
                     <p class="text-[#94A3B8] text-sm leading-relaxed">Click to submit your requirements via our interactive popup form and securely complete the ₹999 payment.</p>
                 </div>
                 <div class="glass-card p-8 rounded-2xl relative">
-                    <span class="text-4xl font-black text-[#7C3AED]/20 absolute top-6 right-6">02</span>
+                    <span class="text-4xl font-black text-[#3B82F6]/20 absolute top-6 right-6">02</span>
                     <h3 class="text-xl font-bold text-white mb-3 mt-4">Design & Review</h3>
                     <p class="text-[#94A3B8] text-sm leading-relaxed">Our pro design team crafts your tailored static informative website layout and shares preview access.</p>
                 </div>
                 <div class="glass-card p-8 rounded-2xl relative">
-                    <span class="text-4xl font-black text-[#7C3AED]/20 absolute top-6 right-6">03</span>
+                    <span class="text-4xl font-black text-[#3B82F6]/20 absolute top-6 right-6">03</span>
                     <h3 class="text-xl font-bold text-white mb-3 mt-4">Launch Live</h3>
                     <p class="text-[#94A3B8] text-sm leading-relaxed">Your brand-new business website goes live on the internet, ready to welcome and convert customers.</p>
                 </div>
@@ -492,19 +601,19 @@
     </section>
 
     <!-- Pricing / CTA Section -->
-    <section id="pricing" class="py-24 bg-[#0A0F1D]">
+    <section id="pricing" class="py-24 bg-[#0F172A]">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="bg-gradient-to-br from-[#131B2E] to-[#0A0F1D] text-white rounded-3xl p-8 sm:p-16 text-center shadow-2xl relative overflow-hidden border border-[#1E293B]">
-                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#7C3AED] opacity-20 rounded-full blur-3xl"></div>
+            <div class="bg-gradient-to-br from-[#1E293B] to-[#0F172A] text-white rounded-3xl p-8 sm:p-16 text-center shadow-2xl relative overflow-hidden border border-[#334155]">
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#3B82F6] opacity-20 rounded-full blur-3xl"></div>
                 <div class="relative z-10 max-w-2xl mx-auto space-y-6">
-                    <span class="bg-[#7C3AED] text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">Limited Time Offer</span>
+                    <span class="bg-[#3B82F6] text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">Limited Time Offer</span>
                     <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Static Informative Website Design</h2>
                     <p class="text-[#94A3B8] text-lg">Professional layout, modern styling, high conversion focus — built completely for your brand.</p>
                     <div class="text-5xl sm:text-6xl font-black tracking-tight text-white py-2">
                         ₹999 <span class="text-base font-normal text-[#94A3B8]">/ one-time</span>
                     </div>
                     <div>
-                        <button onclick="openModal()" class="bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold px-10 py-5 rounded-xl transition-all shadow-xl shadow-purple-900/40 text-lg transform hover:-translate-y-0.5">
+                        <button onclick="openModal()" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold px-10 py-5 rounded-xl transition-all shadow-xl shadow-blue-900/40 text-lg transform hover:-translate-y-0.5">
                             Get Started Now for ₹999
                         </button>
                     </div>
@@ -515,7 +624,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#0A0F1D] border-t border-[#1E293B] py-12">
+    <footer class="bg-[#0F172A] border-t border-[#334155] py-12">
         <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-sm text-[#94A3B8]">
             <p>&copy; 2026 Midpaye Design Service. All rights reserved.</p>
             <div class="flex space-x-6 mt-4 sm:mt-0">
@@ -528,10 +637,10 @@
 
     <!-- TERMS & CONDITIONS MODAL -->
     <div id="termsModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none modal">
-        <div class="bg-[#131B2E] w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden border border-[#1E293B] m-4 max-h-[90vh] flex flex-col">
-            <div class="px-6 py-4 border-b border-[#1E293B] flex items-center justify-between bg-[#0A0F1D]">
+        <div class="bg-[#1E293B] w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden border border-[#334155] m-4 max-h-[90vh] flex flex-col">
+            <div class="px-6 py-4 border-b border-[#334155] flex items-center justify-between bg-[#0F172A]">
                 <h3 class="text-lg font-bold text-white">Website Design Services – Terms & Conditions</h3>
-                <button onclick="closeTermsModal()" class="w-8 h-8 rounded-full bg-[#131B2E] border border-[#1E293B] text-[#94A3B8] hover:text-white flex items-center justify-center transition-colors">
+                <button onclick="closeTermsModal()" class="w-8 h-8 rounded-full bg-[#1E293B] border border-[#334155] text-[#94A3B8] hover:text-white flex items-center justify-center transition-colors">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
@@ -582,8 +691,8 @@
                     <p>By making 100% full payment, the client confirms that they have read, understood, and accepted all of the above Terms & Conditions. Payment = Acceptance of Terms & Conditions.</p>
                 </div>
             </div>
-            <div class="px-6 py-4 border-t border-[#1E293B] bg-[#0A0F1D] flex justify-end">
-                <button onclick="closeTermsModal()" class="bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition-all">
+            <div class="px-6 py-4 border-t border-[#334155] bg-[#0F172A] flex justify-end">
+                <button onclick="closeTermsModal()" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition-all">
                     Close
                 </button>
             </div>
@@ -592,12 +701,12 @@
 
     <!-- INTERACTIVE MODAL FLOW (Form -> Direct UPI Payment -> WhatsApp Confirmation) -->
     <div id="projectModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none modal">
-        <div class="bg-[#131B2E] w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-[#1E293B] m-4 max-h-[90vh] flex flex-col">
+        <div class="bg-[#1E293B] w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-[#334155] m-4 max-h-[90vh] flex flex-col">
             
             <!-- Modal Header -->
-            <div class="px-6 py-4 border-b border-[#1E293B] flex items-center justify-between bg-[#0A0F1D]">
+            <div class="px-6 py-4 border-b border-[#334155] flex items-center justify-between bg-[#0F172A]">
                 <h3 id="modalTitle" class="text-lg font-bold text-white">Start Your Project (₹999)</h3>
-                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-[#131B2E] border border-[#1E293B] text-[#94A3B8] hover:text-white flex items-center justify-center transition-colors">
+                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-[#1E293B] border border-[#334155] text-[#94A3B8] hover:text-white flex items-center justify-center transition-colors">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
@@ -612,11 +721,11 @@
                     <form id="websiteDetailsForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">Your Name / Brand Name *</label>
-                            <input type="text" id="clientName" required placeholder="e.g. Acme Innovations" class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white">
+                            <input type="text" id="clientName" required placeholder="e.g. Acme Innovations" class="w-full px-4 py-3 rounded-xl border border-[#334155] focus:outline-none focus:border-[#3B82F6] text-sm bg-[#0F172A] text-white">
                         </div>
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">What type of website do you need? *</label>
-                            <select id="websiteType" required onchange="handleWebsiteTypeChange()" class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white">
+                            <select id="websiteType" required onchange="handleWebsiteTypeChange()" class="w-full px-4 py-3 rounded-xl border border-[#334155] focus:outline-none focus:border-[#3B82F6] text-sm bg-[#0F172A] text-white">
                                 <option value="">Select website category</option>
                                 <option value="School / Educational Institution">School / Educational Institution</option>
                                 <option value="Hospital / Healthcare Clinic">Hospital / Healthcare Clinic</option>
@@ -636,27 +745,28 @@
                         <!-- Custom Other Website Type Input (Hidden by default) -->
                         <div id="otherWebsiteContainer" class="hidden">
                             <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">Please specify your website type *</label>
-                            <input type="text" id="otherWebsiteInput" placeholder="e.g. Directory, Forum, etc." class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white">
+                            <input type="text" id="otherWebsiteInput" placeholder="e.g. Directory, Forum, etc." class="w-full px-4 py-3 rounded-xl border border-[#334155] focus:outline-none focus:border-[#3B82F6] text-sm bg-[#0F172A] text-white">
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">Phone Number / WhatsApp *</label>
-                            <input type="tel" id="clientPhone" required placeholder="e.g. +91 9876543210" class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">Phone Number / WhatsApp * (10 digits, not starting with 1-5)</label>
+                            <input type="tel" id="clientPhone" required maxlength="10" placeholder="e.g. 6789012345" class="w-full px-4 py-3 rounded-xl border border-[#334155] focus:outline-none focus:border-[#3B82F6] text-sm bg-[#0F172A] text-white">
+                            <p id="phoneError" class="text-xs text-red-400 mt-1 hidden">Must be exactly 10 digits and cannot start with 1, 2, 3, 4, or 5.</p>
                         </div>
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">Remaining Details / Specific Preferences</label>
-                            <textarea id="clientDetails" rows="3" placeholder="Mention any color preferences, content sections, or layout ideas..." class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white"></textarea>
+                            <textarea id="clientDetails" rows="3" placeholder="Mention any color preferences, content sections, or layout ideas..." class="w-full px-4 py-3 rounded-xl border border-[#334155] focus:outline-none focus:border-[#3B82F6] text-sm bg-[#0F172A] text-white"></textarea>
                         </div>
 
                         <!-- Terms and Conditions Checkbox -->
                         <div class="flex items-start space-x-3 pt-1">
-                            <input type="checkbox" id="termsCheckbox" required class="mt-1 w-4 h-4 rounded border-[#1E293B] text-[#7C3AED] focus:ring-[#7C3AED] bg-[#0A0F1D] cursor-pointer">
+                            <input type="checkbox" id="termsCheckbox" required class="mt-1 w-4 h-4 rounded border-[#334155] text-[#3B82F6] focus:ring-[#3B82F6] bg-[#0F172A] cursor-pointer">
                             <label for="termsCheckbox" class="text-xs text-[#94A3B8] leading-relaxed cursor-pointer">
-                                I have read and agree to the <a href="#" onclick="openTermsModal(event)" class="text-[#06B6D4] hover:underline font-medium">Terms & Conditions</a> (including the No Refund Policy). I understand that 100% full payment is required before project commencement. *
+                                I have read and agree to the <a href="#" onclick="openTermsModal(event)" class="text-[#10B981] hover:underline font-medium">Terms & Conditions</a> (including the No Refund Policy). I understand that 100% full payment is required before project commencement. *
                             </label>
                         </div>
                         
-                        <button type="submit" class="w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-purple-900/30">
+                        <button type="submit" id="submitBtn" class="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-blue-900/30">
                             Proceed to Payment (₹999)
                         </button>
                     </form>
@@ -672,19 +782,19 @@
 
                     <!-- Direct UPI App Button (Triggers Mobile UPI apps automatically with prefilled amount ₹999) -->
                     <div>
-                        <a href="upi://pay?pa=8143765300@ybl&pn=Midpaye&am=999.00&cu=INR" class="w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 flex items-center justify-center space-x-2 text-sm">
+                        <a href="upi://pay?pa=8143765300@ybl&pn=Midpaye&am=999.00&cu=INR" class="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-lg shadow-blue-900/40 flex items-center justify-center space-x-2 text-sm">
                             <i class="fa-solid fa-mobile-screen-button text-lg"></i>
                             <span>Open UPI App & Pay ₹999</span>
                         </a>
                     </div>
 
-                    <div class="bg-[#0A0F1D] p-3 rounded-xl border border-[#1E293B] text-xs text-[#94A3B8] flex items-center justify-center space-x-2">
-                        <i class="fa-solid fa-shield-halved text-[#7C3AED]"></i>
+                    <div class="bg-[#0F172A] p-3 rounded-xl border border-[#334155] text-xs text-[#94A3B8] flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-shield-halved text-[#3B82F6]"></i>
                         <span>Secure UPI Transaction • Instant Order Trigger</span>
                     </div>
 
                     <div class="flex space-x-3">
-                        <button onclick="resetModalToForm()" class="w-full bg-[#131B2E] hover:bg-[#1E293B] border border-[#1E293B] text-white font-semibold py-3 rounded-xl text-sm transition-all">
+                        <button onclick="resetModalToForm()" class="w-full bg-[#1E293B] hover:bg-[#334155] border border-[#334155] text-white font-semibold py-3 rounded-xl text-sm transition-all">
                             Back
                         </button>
                     </div>
@@ -719,6 +829,8 @@
 
     <!-- JavaScript Interactive Logic -->
     <script>
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxkoiwadwBo9Eg9g5Ce4MkyTw1pjMbMZ__0vwL9cz_fVSlCZJHsn79eQK3ZTHQHatQ/exec';
+
         const modal = document.getElementById('projectModal');
         const termsModal = document.getElementById('termsModal');
         const stepForm = document.getElementById('stepForm');
@@ -728,6 +840,8 @@
         const websiteTypeSelect = document.getElementById('websiteType');
         const otherWebsiteContainer = document.getElementById('otherWebsiteContainer');
         const otherWebsiteInput = document.getElementById('otherWebsiteInput');
+
+        let currentTrackedPhone = '';
 
         function openModal() {
             modal.classList.remove('opacity-0', 'pointer-events-none');
@@ -762,15 +876,59 @@
             }
         }
 
-        function handleFormSubmit(event) {
+        async function handleFormSubmit(event) {
             event.preventDefault();
             
-            const clientName = document.getElementById('clientName').value;
+            const clientName = document.getElementById('clientName').value.trim();
+            const clientPhone = document.getElementById('clientPhone').value.trim();
+            const phoneError = document.getElementById('phoneError');
+
+            const phoneRegex = /^[6-9]\d{9}$/;
+            if (!phoneRegex.test(clientPhone)) {
+                phoneError.classList.remove('hidden');
+                document.getElementById('clientPhone').focus();
+                return;
+            } else {
+                phoneError.classList.add('hidden');
+            }
+
             let websiteType = websiteTypeSelect.value;
             if (websiteType === 'Other') {
-                websiteType = `Other: ${otherWebsiteInput.value}`;
+                const customCategory = otherWebsiteInput.value.trim();
+                if (customCategory) {
+                    websiteType = customCategory;
+                    const newOption = document.createElement('option');
+                    newOption.value = customCategory;
+                    newOption.text = customCategory;
+                    websiteTypeSelect.insertBefore(newOption, websiteTypeSelect.lastElementChild);
+                }
             }
-            const clientPhone = document.getElementById('clientPhone').value;
+            const clientDetails = document.getElementById('clientDetails').value.trim() || 'None';
+
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = "Saving to Database...";
+            submitBtn.disabled = true;
+
+            try {
+                const formData = new URLSearchParams();
+                formData.append('action', 'create');
+                formData.append('name', clientName);
+                formData.append('websiteType', websiteType);
+                formData.append('phone', clientPhone);
+                formData.append('details', clientDetails);
+
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                });
+            } catch (error) {
+                console.error("Error saving data:", error);
+            } finally {
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            }
             
             const waMessage = encodeURIComponent(`Hi Midpaye, I have completed the ₹999 payment for my website design.\n\n*Name:* ${clientName}\n*Website Type:* ${websiteType}\n*Phone:* ${clientPhone}\n\nHere is my payment receipt screenshot:`);
             document.getElementById('whatsappBtn').href = `https://wa.me/911169296787?text=${waMessage}`;
@@ -779,7 +937,109 @@
             stepQR.classList.remove('hidden');
             modalTitle.innerText = "Complete Payment (₹999)";
 
-            window.location.href = "upi://pay?pa=8143765300@ybl&pn=Midpaye&am=999.00&cu=INR";
+            window.location.href = `upi://pay?pa=8143765300@ybl&pn=Midpaye&am=999.00&cu=INR`;
+        }
+
+        async function trackProject() {
+            const query = document.getElementById('trackQuery').value.trim();
+            const resContainer = document.getElementById('trackResultContainer');
+            const errContainer = document.getElementById('trackErrorContainer');
+            
+            if (!query) return;
+
+            resContainer.classList.add('hidden');
+            errContainer.classList.add('hidden');
+
+            try {
+                const response = await fetch(`${GOOGLE_SCRIPT_URL}?action=track&query=${encodeURIComponent(query)}`);
+                const data = await response.json();
+
+                if (data && data.success) {
+                    currentTrackedPhone = data.phone;
+                    document.getElementById('resBrandName').innerText = data.name;
+                    document.getElementById('resWebsiteType').innerText = data.websiteType;
+                    document.getElementById('resStatusBadge').innerText = data.status;
+                    document.getElementById('resNotes').innerText = data.notes || "Our team is working on your project setup.";
+                    
+                    const liveLinkBox = document.getElementById('liveLinkBox');
+                    const resLiveLink = document.getElementById('resLiveLink');
+
+                    if (data.liveUrl && data.liveUrl.trim() !== '') {
+                        resLiveLink.href = data.liveUrl;
+                        liveLinkBox.classList.remove('hidden');
+                    } else {
+                        liveLinkBox.classList.add('hidden');
+                    }
+
+                    resContainer.classList.remove('hidden');
+                } else {
+                    errContainer.classList.remove('hidden');
+                }
+            } catch (e) {
+                console.error("Tracking error:", e);
+                errContainer.classList.add('hidden');
+                errContainer.classList.remove('hidden');
+            }
+        }
+
+        function copyLiveUrl() {
+            const liveUrl = document.getElementById('resLiveLink').href;
+            navigator.clipboard.writeText(liveUrl).then(() => {
+                const btnText = document.getElementById('copyBtnText');
+                btnText.innerText = "Copied!";
+                setTimeout(() => {
+                    btnText.innerText = "Copy Link";
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+
+        function copySampleLink(url, btnElement) {
+            navigator.clipboard.writeText(url).then(() => {
+                const originalHTML = btnElement.innerHTML;
+                btnElement.innerHTML = `<i class="fa-solid fa-check text-[#10B981]"></i><span>Copied Link!</span>`;
+                setTimeout(() => {
+                    btnElement.innerHTML = originalHTML;
+                }, 2000);
+            });
+        }
+
+        // Submit Design Change Comments directly to Google Sheet
+        async function submitChangeRequest() {
+            const comments = document.getElementById('changeCommentsInput').value.trim();
+            const submitCommentBtn = document.getElementById('submitCommentBtn');
+
+            if (!comments) {
+                alert("Please write your change requests or comments before submitting.");
+                return;
+            }
+
+            const originalText = submitCommentBtn.innerHTML;
+            submitCommentBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i><span>Sending to Team...</span>`;
+            submitCommentBtn.disabled = true;
+
+            try {
+                const formData = new URLSearchParams();
+                formData.append('action', 'updateComments');
+                formData.append('phone', currentTrackedPhone);
+                formData.append('comments', comments);
+
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                });
+
+                alert("Your revision request has been saved to the database successfully!");
+                document.getElementById('changeCommentsInput').value = '';
+            } catch (error) {
+                console.error("Error submitting comments:", error);
+                alert("Failed to send comments. Please try again.");
+            } finally {
+                submitCommentBtn.innerHTML = originalText;
+                submitCommentBtn.disabled = false;
+            }
         }
 
         function resetModalToForm() {
@@ -790,12 +1050,13 @@
             document.getElementById('websiteDetailsForm').reset();
             otherWebsiteContainer.classList.add('hidden');
             otherWebsiteInput.removeAttribute('required');
+            document.getElementById('phoneError').classList.add('hidden');
         }
 
         function completeOrder() {
             stepQR.classList.add('hidden');
-            stepSuccess.classList.remove('hidden');
-            modalTitle.innerText = "Share Receipt";
+            stepSuccess.classList.add('hidden');
+            stepForm.classList.remove('hidden');
         }
 
         modal.addEventListener('click', (e) => {
