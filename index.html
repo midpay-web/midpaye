@@ -46,7 +46,7 @@
         .modal {
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
-        /* Custom scrollbar for terms modal */
+        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 6px;
         }
@@ -116,26 +116,21 @@
                         <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#06B6D4]"></i><span>Quick Turnaround</span></div>
                     </div>
                 </div>
-                <!-- Right Browser Mockup -->
+                <!-- Right Image Showcase -->
                 <div class="lg:col-span-5">
-                    <div class="glass-card rounded-2xl shadow-2xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300">
-                        <!-- Browser Header -->
+                    <div class="glass-card rounded-2xl shadow-2xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300 border border-[#1E293B]">
                         <div class="bg-[#0A0F1D] px-4 py-3 border-b border-[#1E293B] flex items-center space-x-2">
                             <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
                             <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                             <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
                             <div class="ml-4 bg-[#131B2E] px-4 py-1 rounded-md border border-[#1E293B] text-xs text-[#94A3B8] flex-1 text-center font-mono">https://midpaye.design/preview</div>
                         </div>
-                        <!-- Mockup Body Content -->
-                        <div class="p-6 sm:p-8 bg-gradient-to-br from-[#131B2E] to-[#0A0F1D] space-y-6">
-                            <div class="space-y-3">
-                                <span class="bg-[#7C3AED]/20 text-[#7C3AED] text-xs font-bold px-3 py-1 rounded-full border border-[#7C3AED]/30">PORTFOLIO PREVIEW</span>
-                                <h3 class="text-2xl font-bold text-white">Modern Agency Template</h3>
-                                <p class="text-sm text-[#94A3B8]">Clean layouts, high-end typography, and tailored interactive micro-animations.</p>
-                            </div>
-                            <div class="h-40 rounded-xl bg-gradient-to-tr from-[#0A0F1D] to-[#7C3AED] flex items-center justify-center text-white shadow-inner relative overflow-hidden group">
-                                <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all"></div>
-                                <span class="relative z-10 font-bold tracking-wider text-lg">Interactive Live Mockup</span>
+                        <div class="relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Web Design Dashboard" class="w-full h-72 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0A0F1D] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute bottom-4 left-6 right-6">
+                                <span class="bg-[#7C3AED] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">High Conversion</span>
+                                <h4 class="text-xl font-bold text-white mt-2">Modern Agency Layouts</h4>
                             </div>
                         </div>
                     </div>
@@ -169,12 +164,16 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Sample 1: School -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5deef2ba6290e80dd6fec067/1576083086065-1IY82EQOXUXZPKI2B1UX/Grade-4-Math-Edited-1024x521.jpg" alt="School Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">School Website Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Fully responsive layout tailored for educational institutions, featuring admissions info, faculty profiles, and event galleries.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">School Website Template</h3>
+
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Fully responsive layout tailored for educational institutions, featuring admissions info, faculty profiles, and event galleries.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/school/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
@@ -185,12 +184,15 @@
                 </div>
                 <!-- Sample 2: Hospital -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-hospital"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/059/240/979/small_2x/ambulance-waiting-outside-a-modern-hospital-building-on-a-sunny-day-photo.jpg" alt="Hospital Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">Hospital Website Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Clean, professional healthcare layout designed for clinics and hospitals to showcase doctors, departments, and emergency contacts.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">Hospital Website Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Clean, professional healthcare layout designed for clinics and hospitals to showcase doctors, departments, and emergency contacts.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/hospital/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
@@ -201,12 +203,15 @@
                 </div>
                 <!-- Sample 3: News -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-newspaper"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/eb19a4204062391.Y3JvcCwxMjg4LDEwMDgsNTQsMA.png" alt="News Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">News Portal Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Dynamic content-rich layout crafted for media houses, local newspapers, and blogging platforms with organized trending headlines.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">News Portal Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Dynamic content-rich layout crafted for media houses, local newspapers, and blogging platforms with organized trending headlines.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/News/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
@@ -217,12 +222,15 @@
                 </div>
                 <!-- Sample 4: Business -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-briefcase"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://i1.wp.com/psd.graphics/wp-content/uploads/2016/02/Professional-Business-Website-Template-Free-PSD-Mockup1.jpg?fit=912%2C607&ssl=1" alt="Business Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">Business Website Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Corporate and enterprise-focused layout built to showcase professional services, company values, and client testimonials.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">Business Website Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Corporate and enterprise-focused layout built to showcase professional services, company values, and client testimonials.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/Business/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
@@ -233,12 +241,15 @@
                 </div>
                 <!-- Sample 5: Events -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-calendar-days"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://i.pinimg.com/736x/79/9d/32/799d321454e0d8a488b347b272d43f82.jpg" alt="Events Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">Events Website Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Engaging event scheduling layout featuring countdown timers, speaker lineups, ticket booking details, and schedules.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">Events Website Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Engaging event scheduling layout featuring countdown timers, speaker lineups, ticket booking details, and schedules.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/Events/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
@@ -249,12 +260,15 @@
                 </div>
                 <!-- Sample 6: Landing Pages -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-rocket"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Landing Page Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">Landing Pages Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">High-converting single-page layout optimized for product launches, service promotions, and lead generation.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">Landing Pages Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">High-converting single-page layout optimized for product launches, service promotions, and lead generation.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/Landing-Pages/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
@@ -265,12 +279,15 @@
                 </div>
                 <!-- Sample 7: Nonprofit -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-hand-holding-heart"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.8BEAn-HlLPtj5PCHLi1CVwHaFj?r=0&w=600&h=450&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nonprofit Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">Nonprofit Website Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Compassionate, mission-driven layout designed for NGOs and charities to highlight causes, campaigns, and donation calls.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">Nonprofit Website Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Compassionate, mission-driven layout designed for NGOs and charities to highlight causes, campaigns, and donation calls.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/Nonprofit-/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
@@ -281,12 +298,15 @@
                 </div>
                 <!-- Sample 8: Portfolio -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-user-tie"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Portfolio Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">Portfolio Website Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Sleek personal branding layout created for freelancers, creatives, and professionals to showcase their work and skills.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">Portfolio Website Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Sleek personal branding layout created for freelancers, creatives, and professionals to showcase their work and skills.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/Portfolio/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
@@ -297,12 +317,15 @@
                 </div>
                 <!-- Sample 9: Real Estate -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-building"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.3HRw6b0H6rw2T30AbL8FlgHaE8?r=0&w=1050&h=700&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Real Estate Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">Real Estate Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Property-focused layout built for real estate agencies and agents to display listings, amenities, and agent profiles.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">Real Estate Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Property-focused layout built for real estate agencies and agents to display listings, amenities, and agent profiles.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/Real-Estate-/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
@@ -313,12 +336,15 @@
                 </div>
                 <!-- Sample 10: Restaurant -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-utensils"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">Restaurant Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Appetizing culinary layout tailored for cafes, eateries, and restaurants to feature menus, specials, and table booking info.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">Restaurant Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Appetizing culinary layout tailored for cafes, eateries, and restaurants to feature menus, specials, and table booking info.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/Restaurant/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
@@ -329,12 +355,15 @@
                 </div>
                 <!-- Sample 11: Travel & Tourism -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-1">
-                    <div class="p-8 space-y-4">
-                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-plane-departure"></i>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://travellearninghub.com/wp-content/uploads/Why-Air-Ticketing-and-GDS-Courses-in-Delhi-Are-Perfect-for-12th-Class-Graduates.jpeg" alt="Travel Template" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#131B2E] to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white">Travel & Tourism Template</h3>
-                        <p class="text-[#94A3B8] text-sm leading-relaxed">Inspiring destination-focused layout crafted for travel agencies and tour operators to showcase holiday packages and guides.</p>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-white">Travel & Tourism Template</h3>
+                            <p class="text-[#94A3B8] text-sm leading-relaxed">Inspiring destination-focused layout crafted for travel agencies and tour operators to showcase holiday packages and guides.</p>
+                        </div>
                     </div>
                     <div class="p-6 pt-0">
                         <a href="https://midpay-web.github.io/Travel-Tourism/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
@@ -407,25 +436,27 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
                 <div class="group relative rounded-2xl overflow-hidden border border-[#1E293B] bg-[#131B2E] aspect-[16/10] flex items-center justify-center p-8">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Nexus Financial Portal" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-tr from-[#0A0F1D]/90 to-[#7C3AED]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <button onclick="openModal()" class="bg-white text-[#0A0F1D] font-semibold px-6 py-3 rounded-xl shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                             Get Similar Site for ₹999
                         </button>
                     </div>
-                    <div class="text-center space-y-2">
-                        <span class="text-xs font-bold tracking-widest text-[#94A3B8] uppercase">SaaS & Fintech</span>
+                    <div class="relative z-10 text-center space-y-2">
+                        <span class="text-xs font-bold tracking-widest text-[#06B6D4] uppercase">SaaS & Fintech</span>
                         <h4 class="text-2xl font-bold text-white">Nexus Financial Portal</h4>
                     </div>
                 </div>
                 <!-- Project 2 -->
                 <div class="group relative rounded-2xl overflow-hidden border border-[#1E293B] bg-[#131B2E] aspect-[16/10] flex items-center justify-center p-8">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Aura Minimalist Store" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-tr from-[#0A0F1D]/90 to-[#7C3AED]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <button onclick="openModal()" class="bg-white text-[#0A0F1D] font-semibold px-6 py-3 rounded-xl shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                             Get Similar Site for ₹999
                         </button>
                     </div>
-                    <div class="text-center space-y-2">
-                        <span class="text-xs font-bold tracking-widest text-[#94A3B8] uppercase">E-Commerce & Retail</span>
+                    <div class="relative z-10 text-center space-y-2">
+                        <span class="text-xs font-bold tracking-widest text-[#06B6D4] uppercase">E-Commerce & Retail</span>
                         <h4 class="text-2xl font-bold text-white">Aura Minimalist Store</h4>
                     </div>
                 </div>
@@ -477,7 +508,7 @@
                             Get Started Now for ₹999
                         </button>
                     </div>
-                    <p class="text-xs text-[#94A3B8]">Secure UPI payment gateway via QR code. Instant confirmation.</p>
+                    <p class="text-xs text-[#94A3B8]">Secure UPI payment gateway. Instant confirmation.</p>
                 </div>
             </div>
         </div>
@@ -641,7 +672,7 @@
 
                     <!-- Direct UPI App Button (Triggers Mobile UPI apps automatically with prefilled amount ₹999) -->
                     <div>
-                        <a href="upi://pay?pa=nageshyadav4u@oksbi&pn=Midpaye&am=999.00&cu=INR" class="w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 flex items-center justify-center space-x-2 text-sm">
+                        <a href="upi://pay?pa=8143765300@ybl&pn=Midpaye&am=999.00&cu=INR" class="w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 flex items-center justify-center space-x-2 text-sm">
                             <i class="fa-solid fa-mobile-screen-button text-lg"></i>
                             <span>Open UPI App & Pay ₹999</span>
                         </a>
@@ -706,7 +737,6 @@
         function closeModal() {
             modal.classList.add('opacity-0', 'pointer-events-none');
             document.body.style.overflow = 'auto';
-            // Reset state after closing
             setTimeout(() => {
                 resetModalToForm();
             }, 300);
@@ -735,7 +765,6 @@
         function handleFormSubmit(event) {
             event.preventDefault();
             
-            // Capture form values
             const clientName = document.getElementById('clientName').value;
             let websiteType = websiteTypeSelect.value;
             if (websiteType === 'Other') {
@@ -743,17 +772,14 @@
             }
             const clientPhone = document.getElementById('clientPhone').value;
             
-            // Construct dynamic WhatsApp URL with user project details & payment notification
             const waMessage = encodeURIComponent(`Hi Midpaye, I have completed the ₹999 payment for my website design.\n\n*Name:* ${clientName}\n*Website Type:* ${websiteType}\n*Phone:* ${clientPhone}\n\nHere is my payment receipt screenshot:`);
             document.getElementById('whatsappBtn').href = `https://wa.me/911169296787?text=${waMessage}`;
 
-            // Switch views from Form to payment section & automatically attempt to trigger UPI intent on mobile
             stepForm.classList.add('hidden');
             stepQR.classList.remove('hidden');
             modalTitle.innerText = "Complete Payment (₹999)";
 
-            // Automatically trigger UPI scheme link on mobile devices
-            window.location.href = "upi://pay?pa=nageshyadav4u@oksbi&pn=Midpaye&am=999.00&cu=INR";
+            window.location.href = "upi://pay?pa=8143765300@ybl&pn=Midpaye&am=999.00&cu=INR";
         }
 
         function resetModalToForm() {
@@ -772,7 +798,6 @@
             modalTitle.innerText = "Share Receipt";
         }
 
-        // Close modal on clicking outside background area
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
                 closeModal();
