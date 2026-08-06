@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midpaye - Professional Website Design Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navyBg: '#0A0F1D',
+                        cardNavy: '#131B2E',
+                        borderNavy: '#1E293B',
+                        electricViolet: '#7C3AED',
+                        violetHover: '#6D28D9',
+                        neonCyan: '#06B6D4',
+                        textMuted: '#94A3B8',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta+Sans', sans-serif;
+            background-color: #0A0F1D;
+            color: #F8FAFC;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(19, 27, 46, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(30, 41, 59, 0.8);
+        }
+        /* Modal transitions */
+        .modal {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        /* Custom scrollbar for terms modal */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0F1D;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1E293B;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7C3AED;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#7C3AED] selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-40 bg-[#0A0F1D]/80 backdrop-blur-md border-b border-[#1E293B]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-extrabold tracking-tight text-white">Mid<span class="text-[#7C3AED]">paye</span></span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-[#94A3B8]">
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#samples" class="hover:text-white transition-colors">Sample Designs</a>
+                <a href="#work" class="hover:text-white transition-colors">Work</a>
+                <a href="#process" class="hover:text-white transition-colors">Process</a>
+                <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+            </nav>
+            <div>
+                <button onclick="openModal()" class="bg-[#7C3AED] hover:bg-[#6D28D9] text-white px-5 py-2.5 rounded-xl font-medium text-sm transition-all shadow-lg shadow-purple-900/30 transform hover:-translate-y-0.5">
+                    Start at ₹999/-
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#7C3AED]/15 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center space-x-2 bg-[#131B2E] px-3.5 py-1.5 rounded-full border border-[#1E293B] shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-[#06B6D4] animate-pulse"></span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-[#94A3B8]">Static Informative Websites • Just ₹999</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        We Design Websites That Make Your <span class="gradient-text">Business Stand Out.</span>
+                    </h1>
+                    <p class="text-lg text-[#94A3B8] max-w-xl font-normal leading-relaxed">
+                        Strategy, UI/UX, and high-performance website design built around your brand and customers. Lightning fast delivery at unbeatable value.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button onclick="openModal()" class="bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-center font-semibold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 transform hover:-translate-y-0.5">
+                            Start Your Project (₹999)
+                        </button>
+                        <a href="#samples" class="bg-[#131B2E] hover:bg-[#1E293B] border border-[#1E293B] text-white text-center font-semibold px-8 py-4 rounded-xl transition-all shadow-sm">
+                            View Sample Designs
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-6 pt-4 text-sm text-[#94A3B8]">
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#06B6D4]"></i><span>100% Responsive</span></div>
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#06B6D4]"></i><span>SEO Friendly</span></div>
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-[#06B6D4]"></i><span>Quick Turnaround</span></div>
+                    </div>
+                </div>
+                <!-- Right Browser Mockup -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-2xl shadow-2xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300">
+                        <!-- Browser Header -->
+                        <div class="bg-[#0A0F1D] px-4 py-3 border-b border-[#1E293B] flex items-center space-x-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                            <div class="ml-4 bg-[#131B2E] px-4 py-1 rounded-md border border-[#1E293B] text-xs text-[#94A3B8] flex-1 text-center font-mono">https://midpaye.design/preview</div>
+                        </div>
+                        <!-- Mockup Body Content -->
+                        <div class="p-6 sm:p-8 bg-gradient-to-br from-[#131B2E] to-[#0A0F1D] space-y-6">
+                            <div class="space-y-3">
+                                <span class="bg-[#7C3AED]/20 text-[#7C3AED] text-xs font-bold px-3 py-1 rounded-full border border-[#7C3AED]/30">PORTFOLIO PREVIEW</span>
+                                <h3 class="text-2xl font-bold text-white">Modern Agency Template</h3>
+                                <p class="text-sm text-[#94A3B8]">Clean layouts, high-end typography, and tailored interactive micro-animations.</p>
+                            </div>
+                            <div class="h-40 rounded-xl bg-gradient-to-tr from-[#0A0F1D] to-[#7C3AED] flex items-center justify-center text-white shadow-inner relative overflow-hidden group">
+                                <div class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all"></div>
+                                <span class="relative z-10 font-bold tracking-wider text-lg">Interactive Live Mockup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-12 border-y border-[#1E293B] bg-[#131B2E]/50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xs font-bold tracking-widest uppercase text-[#94A3B8] mb-8">Trusted by fast-growing brands & entrepreneurs worldwide</p>
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all">
+                <span class="text-xl font-bold tracking-tight text-white">VANGUARD</span>
+                <span class="text-xl font-bold tracking-tight text-white">NEXUS.IO</span>
+                <span class="text-xl font-bold tracking-tight text-white">LUMEN LABS</span>
+                <span class="text-xl font-bold tracking-tight text-white">KINETIC</span>
+                <span class="text-xl font-bold tracking-tight text-white">PULSE.CO</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Website Samples Section -->
+    <section id="samples" class="py-24 bg-[#0A0F1D]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="bg-[#06B6D4]/20 text-[#06B6D4] text-xs font-bold px-3 py-1 rounded-full border border-[#06B6D4]/30 uppercase tracking-wider">Live Demos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Explore Sample Website Designs</h2>
+                <p class="text-[#94A3B8] text-lg">Check out real live examples of our high-quality industry website templates built for just ₹999.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sample 1: School -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">School Website Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Fully responsive layout tailored for educational institutions, featuring admissions info, faculty profiles, and event galleries.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/school/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 2: Hospital -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Hospital Website Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Clean, professional healthcare layout designed for clinics and hospitals to showcase doctors, departments, and emergency contacts.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/hospital/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 3: News -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">News Portal Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Dynamic content-rich layout crafted for media houses, local newspapers, and blogging platforms with organized trending headlines.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/News/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 4: Business -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Business Website Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Corporate and enterprise-focused layout built to showcase professional services, company values, and client testimonials.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/Business/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 5: Events -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Events Website Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Engaging event scheduling layout featuring countdown timers, speaker lineups, ticket booking details, and schedules.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/Events/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 6: Landing Pages -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Landing Pages Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">High-converting single-page layout optimized for product launches, service promotions, and lead generation.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/Landing-Pages/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 7: Nonprofit -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Nonprofit Website Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Compassionate, mission-driven layout designed for NGOs and charities to highlight causes, campaigns, and donation calls.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/Nonprofit-/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 8: Portfolio -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Portfolio Website Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Sleek personal branding layout created for freelancers, creatives, and professionals to showcase their work and skills.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/Portfolio/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 9: Real Estate -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Real Estate Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Property-focused layout built for real estate agencies and agents to display listings, amenities, and agent profiles.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/Real-Estate-/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 10: Restaurant -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#06B6D4]/20 text-[#06B6D4] flex items-center justify-center text-xl group-hover:bg-[#06B6D4] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Restaurant Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Appetizing culinary layout tailored for cafes, eateries, and restaurants to feature menus, specials, and table booking info.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/Restaurant/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#06B6D4] hover:text-[#0A0F1D] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#06B6D4]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sample 11: Travel & Tourism -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                    <div class="p-8 space-y-4">
+                        <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Travel & Tourism Template</h3>
+                        <p class="text-[#94A3B8] text-sm leading-relaxed">Inspiring destination-focused layout crafted for travel agencies and tour operators to showcase holiday packages and guides.</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://midpay-web.github.io/Travel-Tourism/" target="_blank" class="w-full bg-[#131B2E] hover:bg-[#7C3AED] text-white border border-[#1E293B] font-semibold py-3.5 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm shadow-sm group-hover:border-[#7C3AED]">
+                            <span>Visit Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-[#131B2E]/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Crafted for Performance</h2>
+                <p class="text-[#94A3B8] text-lg">Comprehensive design solutions engineered to elevate your business presence online.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Website Design</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Stunning informative websites structured explicitly to convert your target visitors into clients.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">UI/UX Design</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">User-centric interfaces optimized for seamless interaction, gorgeous visuals, and intuitive flows.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Responsive Web Design</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Flawless adaptability across smartphones, tablets, laptops, and massive widescreen monitors.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-[#7C3AED]/20 text-[#7C3AED] flex items-center justify-center text-xl mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Website Redesign</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Transform your outdated digital footprint into a state-of-the-art modern brand powerhouse.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section id="work" class="py-24 bg-[#0A0F1D]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Featured Work</h2>
+                    <p class="text-[#94A3B8] text-lg mt-2">A small sample of high-impact websites we've built.</p>
+                </div>
+                <button onclick="openModal()" class="mt-4 md:mt-0 text-[#06B6D4] font-bold inline-flex items-center space-x-2 hover:text-white transition-colors">
+                    <span>Explore All Projects</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative rounded-2xl overflow-hidden border border-[#1E293B] bg-[#131B2E] aspect-[16/10] flex items-center justify-center p-8">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#0A0F1D]/90 to-[#7C3AED]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <button onclick="openModal()" class="bg-white text-[#0A0F1D] font-semibold px-6 py-3 rounded-xl shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            Get Similar Site for ₹999
+                        </button>
+                    </div>
+                    <div class="text-center space-y-2">
+                        <span class="text-xs font-bold tracking-widest text-[#94A3B8] uppercase">SaaS & Fintech</span>
+                        <h4 class="text-2xl font-bold text-white">Nexus Financial Portal</h4>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="group relative rounded-2xl overflow-hidden border border-[#1E293B] bg-[#131B2E] aspect-[16/10] flex items-center justify-center p-8">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#0A0F1D]/90 to-[#7C3AED]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <button onclick="openModal()" class="bg-white text-[#0A0F1D] font-semibold px-6 py-3 rounded-xl shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            Get Similar Site for ₹999
+                        </button>
+                    </div>
+                    <div class="text-center space-y-2">
+                        <span class="text-xs font-bold tracking-widest text-[#94A3B8] uppercase">E-Commerce & Retail</span>
+                        <h4 class="text-2xl font-bold text-white">Aura Minimalist Store</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-24 bg-[#131B2E]/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Simple 3-Step Execution</h2>
+                <p class="text-[#94A3B8] text-lg">From brief to launch seamlessly and fast.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <span class="text-4xl font-black text-[#7C3AED]/20 absolute top-6 right-6">01</span>
+                    <h3 class="text-xl font-bold text-white mb-3 mt-4">Share Details & Pay</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Click to submit your requirements via our interactive popup form and securely complete the ₹999 payment.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <span class="text-4xl font-black text-[#7C3AED]/20 absolute top-6 right-6">02</span>
+                    <h3 class="text-xl font-bold text-white mb-3 mt-4">Design & Review</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Our pro design team crafts your tailored static informative website layout and shares preview access.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <span class="text-4xl font-black text-[#7C3AED]/20 absolute top-6 right-6">03</span>
+                    <h3 class="text-xl font-bold text-white mb-3 mt-4">Launch Live</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Your brand-new business website goes live on the internet, ready to welcome and convert customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / CTA Section -->
+    <section id="pricing" class="py-24 bg-[#0A0F1D]">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-gradient-to-br from-[#131B2E] to-[#0A0F1D] text-white rounded-3xl p-8 sm:p-16 text-center shadow-2xl relative overflow-hidden border border-[#1E293B]">
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#7C3AED] opacity-20 rounded-full blur-3xl"></div>
+                <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+                    <span class="bg-[#7C3AED] text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">Limited Time Offer</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Static Informative Website Design</h2>
+                    <p class="text-[#94A3B8] text-lg">Professional layout, modern styling, high conversion focus — built completely for your brand.</p>
+                    <div class="text-5xl sm:text-6xl font-black tracking-tight text-white py-2">
+                        ₹999 <span class="text-base font-normal text-[#94A3B8]">/ one-time</span>
+                    </div>
+                    <div>
+                        <button onclick="openModal()" class="bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold px-10 py-5 rounded-xl transition-all shadow-xl shadow-purple-900/40 text-lg transform hover:-translate-y-0.5">
+                            Get Started Now for ₹999
+                        </button>
+                    </div>
+                    <p class="text-xs text-[#94A3B8]">Secure UPI payment gateway via QR code. Instant confirmation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0F1D] border-t border-[#1E293B] py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-sm text-[#94A3B8]">
+            <p>&copy; 2026 Midpaye Design Service. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" onclick="openTermsModal(event)" class="hover:text-white">Terms of Service</a>
+                <a href="#" class="hover:text-white">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TERMS & CONDITIONS MODAL -->
+    <div id="termsModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none modal">
+        <div class="bg-[#131B2E] w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden border border-[#1E293B] m-4 max-h-[90vh] flex flex-col">
+            <div class="px-6 py-4 border-b border-[#1E293B] flex items-center justify-between bg-[#0A0F1D]">
+                <h3 class="text-lg font-bold text-white">Website Design Services – Terms & Conditions</h3>
+                <button onclick="closeTermsModal()" class="w-8 h-8 rounded-full bg-[#131B2E] border border-[#1E293B] text-[#94A3B8] hover:text-white flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-4 text-sm text-[#94A3B8] leading-relaxed">
+                <p class="font-semibold text-white">Please read the following Terms & Conditions carefully before making payment. By making 100% full payment, the client confirms that they have read, understood, and accepted these Terms & Conditions.</p>
+                
+                <div class="space-y-3 pt-2">
+                    <h4 class="font-bold text-white">1. Service</h4>
+                    <p>We provide informative website design and development services only, based on the project requirements agreed with the client before payment.</p>
+                    
+                    <h4 class="font-bold text-white">2. Full Payment</h4>
+                    <p>100% payment is required at one time before the project starts. No work will begin until full payment has been received.</p>
+                    
+                    <h4 class="font-bold text-white">3. Domain & Hosting</h4>
+                    <p>Domain registration and web hosting are not included in the website design price. Domain, hosting, business email, SSL, premium plugins, themes, third-party services, subscriptions, and other external charges are the client's responsibility unless specifically included in the agreed quotation.</p>
+                    
+                    <h4 class="font-bold text-white">4. Website Content</h4>
+                    <p>The client must provide accurate text, images, logos, contact details, business information, and other required content. The client is responsible for ensuring that all supplied content is legally permitted to be used.</p>
+                    
+                    <h4 class="font-bold text-white">5. Website Scope</h4>
+                    <p>Our service is for informative websites. Any features or services outside the agreed scope may require additional charges. E-commerce, online payments, booking systems, membership systems, customer login, advanced web applications, custom software, and complex integrations are not included unless specifically agreed.</p>
+                    
+                    <h4 class="font-bold text-white">6. Design Changes</h4>
+                    <p>The website will be designed according to the requirements agreed before the project starts. Major changes to the approved design, layout, content, or project requirements may be treated as additional work and may incur additional charges.</p>
+                    
+                    <h4 class="font-bold text-white">7. Project Timeline</h4>
+                    <p>The delivery time depends on the project requirements and timely submission of content, feedback, and approvals by the client. Client-related delays may extend the delivery timeline.</p>
+                    
+                    <h4 class="font-bold text-white">8. Final Approval</h4>
+                    <p>The client is responsible for checking and approving the website content, design, contact information, images, links, and other details before final completion. Changes requested after final approval may be charged separately.</p>
+                    
+                    <h4 class="font-bold text-white">9. Maintenance & Future Changes</h4>
+                    <p>The website design price does not include unlimited future updates or maintenance. New pages, content updates, design changes, new features, technical maintenance, and other future modifications may be charged separately.</p>
+                    
+                    <h4 class="font-bold text-white">10. Third-Party Services</h4>
+                    <p>We are not responsible for problems, downtime, price changes, renewal fees, suspension, or discontinuation of third-party services such as hosting, domain providers, plugins, APIs, email services, or other external platforms.</p>
+                    
+                    <h4 class="font-bold text-white">11. SEO & Results</h4>
+                    <p>Website design does not guarantee Google rankings, search engine results, traffic, enquiries, leads, or sales. SEO and digital marketing services are not included unless separately agreed.</p>
+                    
+                    <h4 class="font-bold text-white">12. Client Responsibility</h4>
+                    <p>The client is responsible for the accuracy and legality of all information and materials provided for the website, including text, images, logos, trademarks, and other content.</p>
+                    
+                    <h4 class="font-bold text-white">13. ⚠️ No Refund Policy</h4>
+                    <p>100% full payment is required before the project starts. Once payment is made, no refund will be provided for cancellation for any reason. By proceeding with payment, you confirm that you have read and accepted our Terms & Conditions and No Refund Policy.</p>
+                    
+                    <h4 class="font-bold text-white">14. Agreement</h4>
+                    <p>By making 100% full payment, the client confirms that they have read, understood, and accepted all of the above Terms & Conditions. Payment = Acceptance of Terms & Conditions.</p>
+                </div>
+            </div>
+            <div class="px-6 py-4 border-t border-[#1E293B] bg-[#0A0F1D] flex justify-end">
+                <button onclick="closeTermsModal()" class="bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition-all">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTERACTIVE MODAL FLOW (Form -> Direct UPI Payment -> WhatsApp Confirmation) -->
+    <div id="projectModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none modal">
+        <div class="bg-[#131B2E] w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-[#1E293B] m-4 max-h-[90vh] flex flex-col">
+            
+            <!-- Modal Header -->
+            <div class="px-6 py-4 border-b border-[#1E293B] flex items-center justify-between bg-[#0A0F1D]">
+                <h3 id="modalTitle" class="text-lg font-bold text-white">Start Your Project (₹999)</h3>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-[#131B2E] border border-[#1E293B] text-[#94A3B8] hover:text-white flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content Body -->
+            <div class="p-6 overflow-y-auto space-y-6">
+                
+                <!-- STEP 1: INFORMATION FORM -->
+                <div id="stepForm" class="space-y-4">
+                    <p class="text-sm text-[#94A3B8]">Please tell us about your project requirements so we can build your tailored static informative website.</p>
+                    
+                    <form id="websiteDetailsForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">Your Name / Brand Name *</label>
+                            <input type="text" id="clientName" required placeholder="e.g. Acme Innovations" class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">What type of website do you need? *</label>
+                            <select id="websiteType" required onchange="handleWebsiteTypeChange()" class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white">
+                                <option value="">Select website category</option>
+                                <option value="School / Educational Institution">School / Educational Institution</option>
+                                <option value="Hospital / Healthcare Clinic">Hospital / Healthcare Clinic</option>
+                                <option value="News Portal / Blog">News Portal / Blog</option>
+                                <option value="Business / Corporate Static Info">Business / Corporate Static Info</option>
+                                <option value="Events Website">Events Website</option>
+                                <option value="Landing Page / Service Promo">Landing Page / Service Promo</option>
+                                <option value="Nonprofit / NGO">Nonprofit / NGO</option>
+                                <option value="Portfolio / Personal Brand">Portfolio / Personal Brand</option>
+                                <option value="Real Estate">Real Estate</option>
+                                <option value="Restaurant / Food">Restaurant / Food</option>
+                                <option value="Travel & Tourism">Travel & Tourism</option>
+                                <option value="Other">Other (Specify)</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Custom Other Website Type Input (Hidden by default) -->
+                        <div id="otherWebsiteContainer" class="hidden">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">Please specify your website type *</label>
+                            <input type="text" id="otherWebsiteInput" placeholder="e.g. Directory, Forum, etc." class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">Phone Number / WhatsApp *</label>
+                            <input type="tel" id="clientPhone" required placeholder="e.g. +91 9876543210" class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">Remaining Details / Specific Preferences</label>
+                            <textarea id="clientDetails" rows="3" placeholder="Mention any color preferences, content sections, or layout ideas..." class="w-full px-4 py-3 rounded-xl border border-[#1E293B] focus:outline-none focus:border-[#7C3AED] text-sm bg-[#0A0F1D] text-white"></textarea>
+                        </div>
+
+                        <!-- Terms and Conditions Checkbox -->
+                        <div class="flex items-start space-x-3 pt-1">
+                            <input type="checkbox" id="termsCheckbox" required class="mt-1 w-4 h-4 rounded border-[#1E293B] text-[#7C3AED] focus:ring-[#7C3AED] bg-[#0A0F1D] cursor-pointer">
+                            <label for="termsCheckbox" class="text-xs text-[#94A3B8] leading-relaxed cursor-pointer">
+                                I have read and agree to the <a href="#" onclick="openTermsModal(event)" class="text-[#06B6D4] hover:underline font-medium">Terms & Conditions</a> (including the No Refund Policy). I understand that 100% full payment is required before project commencement. *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-purple-900/30">
+                            Proceed to Payment (₹999)
+                        </button>
+                    </form>
+                </div>
+
+                <!-- STEP 2: DIRECT UPI PAYMENT SCREEN (Hidden Initially) -->
+                <div id="stepQR" class="hidden text-center space-y-6 py-2">
+                    <div class="space-y-1">
+                        <span class="inline-block bg-emerald-500/20 text-emerald-400 font-bold text-xs px-3 py-1 rounded-full mb-1 border border-emerald-500/30">Details Saved Successfully</span>
+                        <h4 class="text-xl font-bold text-white">Pay ₹999 via UPI App</h4>
+                        <p class="text-xs text-[#94A3B8]">Click below to open your preferred UPI payment app instantly.</p>
+                    </div>
+
+                    <!-- Direct UPI App Button (Triggers Mobile UPI apps automatically with prefilled amount ₹999) -->
+                    <div>
+                        <a href="upi://pay?pa=nageshyadav4u@oksbi&pn=Midpaye&am=999.00&cu=INR" class="w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 flex items-center justify-center space-x-2 text-sm">
+                            <i class="fa-solid fa-mobile-screen-button text-lg"></i>
+                            <span>Open UPI App & Pay ₹999</span>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#0A0F1D] p-3 rounded-xl border border-[#1E293B] text-xs text-[#94A3B8] flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-shield-halved text-[#7C3AED]"></i>
+                        <span>Secure UPI Transaction • Instant Order Trigger</span>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <button onclick="resetModalToForm()" class="w-full bg-[#131B2E] hover:bg-[#1E293B] border border-[#1E293B] text-white font-semibold py-3 rounded-xl text-sm transition-all">
+                            Back
+                        </button>
+                    </div>
+                </div>
+
+                <!-- STEP 3: WHATSAPP RECEIPT SHARING SCREEN (Hidden Initially) -->
+                <div id="stepSuccess" class="hidden text-center space-y-6 py-6">
+                    <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-2xl mx-auto border border-emerald-500/30">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="text-2xl font-bold text-white">Payment Registered!</h4>
+                        <p class="text-sm text-[#94A3B8] max-w-sm mx-auto">Please share the payment receipt on our WhatsApp so we can immediately start working on your website.</p>
+                    </div>
+                    
+                    <!-- WhatsApp Action Button -->
+                    <div>
+                        <a id="whatsappBtn" href="https://wa.me/911169296787?text=Hi%20Midpaye,%20I%20have%20completed%20the%20payment%20of%20₹999%20for%20my%20website%20design.%20Here%20is%20my%20payment%20receipt:" target="_blank" class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg shadow-green-900/40 flex items-center justify-center space-x-3 text-base">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Share Payment Receipt on WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <button onclick="closeModal()" class="text-xs text-[#94A3B8] hover:text-white underline">
+                        Close Window
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactive Logic -->
+    <script>
+        const modal = document.getElementById('projectModal');
+        const termsModal = document.getElementById('termsModal');
+        const stepForm = document.getElementById('stepForm');
+        const stepQR = document.getElementById('stepQR');
+        const stepSuccess = document.getElementById('stepSuccess');
+        const modalTitle = document.getElementById('modalTitle');
+        const websiteTypeSelect = document.getElementById('websiteType');
+        const otherWebsiteContainer = document.getElementById('otherWebsiteContainer');
+        const otherWebsiteInput = document.getElementById('otherWebsiteInput');
+
+        function openModal() {
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = 'auto';
+            // Reset state after closing
+            setTimeout(() => {
+                resetModalToForm();
+            }, 300);
+        }
+
+        function openTermsModal(event) {
+            if (event) event.preventDefault();
+            termsModal.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function closeTermsModal() {
+            termsModal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        function handleWebsiteTypeChange() {
+            if (websiteTypeSelect.value === 'Other') {
+                otherWebsiteContainer.classList.remove('hidden');
+                otherWebsiteInput.setAttribute('required', 'true');
+            } else {
+                otherWebsiteContainer.classList.add('hidden');
+                otherWebsiteInput.removeAttribute('required');
+                otherWebsiteInput.value = '';
+            }
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            // Capture form values
+            const clientName = document.getElementById('clientName').value;
+            let websiteType = websiteTypeSelect.value;
+            if (websiteType === 'Other') {
+                websiteType = `Other: ${otherWebsiteInput.value}`;
+            }
+            const clientPhone = document.getElementById('clientPhone').value;
+            
+            // Construct dynamic WhatsApp URL with user project details & payment notification
+            const waMessage = encodeURIComponent(`Hi Midpaye, I have completed the ₹999 payment for my website design.\n\n*Name:* ${clientName}\n*Website Type:* ${websiteType}\n*Phone:* ${clientPhone}\n\nHere is my payment receipt screenshot:`);
+            document.getElementById('whatsappBtn').href = `https://wa.me/911169296787?text=${waMessage}`;
+
+            // Switch views from Form to payment section & automatically attempt to trigger UPI intent on mobile
+            stepForm.classList.add('hidden');
+            stepQR.classList.remove('hidden');
+            modalTitle.innerText = "Complete Payment (₹999)";
+
+            // Automatically trigger UPI scheme link on mobile devices
+            window.location.href = "upi://pay?pa=nageshyadav4u@oksbi&pn=Midpaye&am=999.00&cu=INR";
+        }
+
+        function resetModalToForm() {
+            stepQR.classList.add('hidden');
+            stepSuccess.classList.add('hidden');
+            stepForm.classList.remove('hidden');
+            modalTitle.innerText = "Start Your Project (₹999)";
+            document.getElementById('websiteDetailsForm').reset();
+            otherWebsiteContainer.classList.add('hidden');
+            otherWebsiteInput.removeAttribute('required');
+        }
+
+        function completeOrder() {
+            stepQR.classList.add('hidden');
+            stepSuccess.classList.remove('hidden');
+            modalTitle.innerText = "Share Receipt";
+        }
+
+        // Close modal on clicking outside background area
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        termsModal.addEventListener('click', (e) => {
+            if (e.target === termsModal) {
+                closeTermsModal();
+            }
+        });
+    </script>
+</body>
+</html>
